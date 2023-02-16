@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>linode_console</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>9b010f44-4a74-4452-9174-2fc7257cdeae</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>   
+    <PackageReference Include="AWSSDK.S3" Version="3.7.103.10" />   
+    <PackageReference Include="microsoft.extensions.hosting" Version="7.0.1" /> 
+    <PackageReference Include="serilog" Version="2.12.0" />
+    <PackageReference Include="serilog.aspnetcore" Version="6.1.0" />
+    <PackageReference Include="serilog.extensions.hosting" Version="5.0.1" />
+    <PackageReference Include="serilog.extensions.logging" Version="3.1.0" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
+    <PackageReference Include="serilog.Settings.Configuration" Version="3.4.0" />
+    <PackageReference Include="serilog.sinks.async" Version="1.5.0" />
+    <PackageReference Include="serilog.sinks.console" Version="4.1.0" />
+  </ItemGroup>
+
+</Project>
